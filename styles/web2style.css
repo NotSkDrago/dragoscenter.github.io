@@ -1,0 +1,142 @@
+body{
+    background-color: #000111;
+}
+h1{
+    text-align:center;
+    background:linear-gradient(to right, red, blue, red);
+    text-decoration: underline;
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.7s linear infinite;
+}
+
+@keyframes animate-gradient {
+    to {
+        background-position:-200%;
+    }
+
+}
+#warning{
+    margin: 0px;
+    margin-top:10px;
+}
+h5{
+    color:#d2042d85;
+    text-align:center;
+
+}
+.abmetxt{
+    color:#d645d6;
+}
+
+p{
+    color:#D2042D;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+h3{
+    color:#D2042D;
+    text-align:center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+h2{
+    text-align:center;
+    font-weight: bold;
+    background:linear-gradient(to right, red, blue, red);
+    text-decoration: underline;
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.7s linear infinite;
+}
+
+
+h6{
+    color:rgba(144, 238, 144, 0.555);
+    text-align: center;
+}
+
+ol{
+    display:block;
+    list-style-type: disc;
+    color: gold;
+    margin-left: 175px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */ 
+}
+
+.card{
+    background-color: #01042c;
+    position:relative;
+    transition: 0.3s;
+    width: 30%;
+    max-width: 30%;
+    height: auto;
+    max-height: auto;
+    border-radius: 10px;
+    margin-top: 40px;
+    overflow-wrap: break-word;
+    margin-bottom: 50px;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.card::after, .card::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), red,  blue, red);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 5px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+
+.card::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+#abmecard{
+    width: 60%;
+    max-width: 60%;
+    height: auto;
+    max-height: auto;
+}
+
+#abmeli{
+    margin-left: 460px;
+}
+#bottomabme{
+    margin-bottom: 50px;
+}

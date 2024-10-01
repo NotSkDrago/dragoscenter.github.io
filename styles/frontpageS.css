@@ -1,0 +1,116 @@
+body{
+    background: linear-gradient(to right,
+    black, rgb(10, 10, 10), black, black);
+    background-size: 200%;
+    animation: animate-gradient 15s linear infinite
+}
+
+
+h1{
+    font-family: 'Segoe UI';
+    text-align: center;
+    text-decoration: underline transparent;
+    font-size: 50px;
+    background: linear-gradient(to right,
+    red, lightblue, blue, pink, rgb(241, 117, 117), red);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 3s linear infinite;
+}
+
+
+
+
+
+
+@keyframes animate-gradient {
+    to {
+        background-position:-200%;
+    }
+
+}
+
+
+
+
+
+p{
+    text-align: center;
+
+    
+}
+button{
+    background-color: rgb(248, 104, 104);
+    border-radius: 50px;
+    margin-right: 20px;
+    font-size: x-large;
+    transition: all 0.4s;
+    text-align: center;
+}
+button:hover{
+    transform: scale(1.2)
+}
+
+
+
+
+
+#links{
+    background-color: rgb(206, 6, 179);
+    
+}
+
+#aboutMe{
+    background-color: rgb(139, 119, 228);
+    transition: 0.4s
+}
+#aboutMe:hover{
+    transform: scale(1.1)
+}
+#browse{
+    font-size: x-large;
+    color:aqua;
+    text-decoration: underline aqua
+}
+#a{
+    color:aqua;
+    font-size: x-large
+}
+
+
+#welcometxt{
+    font-size: x-large;
+    font-weight: 900;
+    color:red
+}
+h5{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+    margin-top: 105px;
+    position: relative
+}
+h6{
+    text-align: center;
+    color:red;
+}
+#Games{
+    background-color:gold;
+    color:black
+}
+#Store{
+    background-color: #85bb65;
+    color:black
+}
+#gif{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.credits{
+    color: rgba(255, 255, 255, 0.377);
+    font-style:italic;
+    
+}
