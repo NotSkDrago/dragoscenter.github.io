@@ -64,12 +64,6 @@ h6{
     text-align: center;
 }
 
-ol{
-    display:block;
-    list-style-type: disc;
-    color: gold;
-    margin-left: 175px;
-}
 
 .container {
     display: flex;
@@ -134,9 +128,17 @@ ol{
     max-height: auto;
 }
 
-#abmeli{
-    margin-left: 460px;
+.abmeli{
+    display: flex;
+    color:gold;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
 }
+
+ol{
+    list-style-type:disc;
+}
+
 #bottomabme{
     margin-bottom: 50px;
 }
