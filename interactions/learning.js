@@ -29,6 +29,6 @@ function openAboutMe() {
 }
 
 function openLinks() {
-    window.open('https://linktr.ee/defnotdrago', '_blank');
+    window.open('https://linktr.ee/notdragodev', '_blank');
 }
 
