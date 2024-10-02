@@ -1,0 +1,68 @@
+body{
+    background-color: #357960
+}
+
+
+/* Heading Styling */
+h1{
+    font-size: 50px;
+    text-align:center;
+    background: linear-gradient(to right, gold, purple, violet, gold);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;   
+    animation: animate-gradient 5s linear infinite;
+}
+
+@keyframes animate-gradient {
+    to{
+        background-position: -200%;
+    }
+}
+
+h3{
+    text-align:center;
+    color:gold;
+    text-decoration: underline;
+}
+
+/* Card styling */
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    text-align: center;
+    background-color: rgb(5, 70, 32);
+    position:relative;
+    transition: 0.3s;
+    width: 30%;
+    max-width: 30%;
+    height: auto;
+    max-height: auto;
+    border-radius: 10px;
+    margin-top: 40px;
+    overflow-wrap: break-word;
+    margin-bottom: 50px;
+}
+
+.card::after, .card::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(20, 41, 29);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 5px;
+    border-radius: 10px;
+}
+.card::before{
+    filter: blur(1.5rem);
+    opacity: 0.8;
+}
