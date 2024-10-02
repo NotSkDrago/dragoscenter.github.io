@@ -17,7 +17,7 @@ document.getElementById("Store");
 Store.addEventListener("click", openStore);
 
 function openGames() {
-    window.location.href = 'unfinishedpg.html';
+    window.location.href = 'games.html';
 }
 
 function openStore() {
